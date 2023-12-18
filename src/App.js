@@ -4,6 +4,7 @@ import {useEffect, useState} from "react";
 import data from "./Assets/Json/emojiList.json"
 import EmojiCard from "./Components/Emoji/Emoji";
 import Header from "./Components/Header/Header";
+import SearchBar from "./Components/SearchBar/SearchBar";
 
 
 function App() {
@@ -22,15 +23,7 @@ function App() {
     <div className="App">
         <Header/>
         {/*# Search Bar*/}
-        <div className="search-bar">
-        <input
-            style={{fontSize: "1.5rem"}}
-            type="text"
-            placeholder="Search here..."
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-        />
-      </div>
+        <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm}></SearchBar>
 
         {/*# Home Content*/}
         <div className="home-content">

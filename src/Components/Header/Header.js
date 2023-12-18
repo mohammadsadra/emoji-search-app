@@ -17,7 +17,7 @@ function Header({ emoji, title }) {
                 <font color="#00C1D4">T</font>
                 <font style={{marginInlineStart:'10px'}}>🤩</font>
             </div>
-            <a href={"https://imohammadsadra.com"}>By imohammadsadra.com</a>
+            <a href={"https://imohammadsadra.ir"}>By imohammadsadra.com</a>
         </div>
     );
 }
